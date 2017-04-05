@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:layout_weight="10">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/title_bar"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:text="Daftar Bantuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        tools:layout_height="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="90"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:text="Pilih Bantuan:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Selamat Datang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_1" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Melihat dan Membaca Kompetensi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_2" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Melihat dan Membaca Materi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_3" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Berlatih dengan Latihan Perakitan Komputer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_4" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Menggunakan Bantuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView11"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_5" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                    <TextView
+                        android:text="» Ketahui Pengembang Aplikasi ini"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView12"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="goToBantuan_6" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/soft_grey"></LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

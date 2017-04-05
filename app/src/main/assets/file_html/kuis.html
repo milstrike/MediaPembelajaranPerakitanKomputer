@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kuis - Perakitan Komputer</title>
+    <link rel="stylesheet" href="css_jqm/themes/default/jquery.mobile-1.4.5.min.css">
+    <script src="js_jqm/jquery.js"></script>
+    <script src="js_jqm/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js_jqm/jquery.tmpl.min.js "></script>
+    <script src="code_logic/scoring.js"></script>
+</head>
+<div data-role="page" id="selamat-datang">
+    <div role="main" class="ui-content">
+        <h1>Selamat datang di Latihan Perakitan Komputer.</h1>
+        Sebelum Anda memulai, harap perhatikan poin-poin di bawah ini.
+        <ol>
+            <li>Berdoalah sebelum mengerjakan</li>
+            <li>Jumlah soal adalah 20 butir</li>
+            <li>Ketika Anda mengerjakan soal, Anda dapat mengakhiri dan membatalkannya dengan menekan tombol kembali</li>
+            <li>Untuk melihat soal selanjutnya klik tombol "Selanjutnya", untuk melihat soal sebelumnya klik tombol "Sebelumnya"</li>
+            <li>Pertanyaan yang sudah dijawab, tidak dapat diganti jawabannya</li>
+            <li>Setiap jawaban benar mendapatkan penambahan skor sebanyak 5 poin, setiap jawaban salah mendapatkan pengurangan skor sebanyak 5 poin</li>
+            <li>Jika Anda sudah siap, klik tombol "Mulai Latihan"</li>
+        </ol>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#soal-1">Mulai Latihan</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 1-->
+<div data-role="page" id="soal-1">
+    <div role="main" class="ui-content">
+        <h3>Perhatikan jenis hardware di bawah ini.</h3>
+        <ol>
+            <li> processor</li>
+            <li> printer</li>
+            <li> RAM</li>
+            <li> Harddisk</li>
+            <li> speaker</li>
+            <li> mainboard</li>
+        </ol>
+        yang merupakan hardware utama adalah....
+        <br>
+        <form>
+            <label><input type="radio" id="soal-1-1" name="soal" value="false" onclick="FalseAnswer()">(1),(2),(3)</label>
+            <label><input type="radio" id="soal-1-2" name="soal" value="false" onclick="FalseAnswer()">(2),(5),(6)</label>
+            <label><input type="radio" id="soal-1-3" name="soal" value="true" onclick="RightAnswer()">(1),(3),(4)</label>
+            <label><input type="radio" id="soal-1-4" name="soal" value="false" onclick="FalseAnswer()">(3),(4),(5)</label>
+            <label><input type="radio" id="soal-1-5" name="soal" value="false" onclick="FalseAnswer()">(2),(5),(6)</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#soal-2" onclick="clearAnswerRotation()" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Soal 2-->
+<div data-role="page" id="soal-2">
+    <div role="main" class="ui-content">
+        <h3>Langkah yang termasuk dalam rencana pemilihan hardware yang akan dibeli dalam perakitan sebuah PC adalah….</h3>
+        <br>
+        <form>
+        <label><input type="radio" name="soal-2-1" value="true" onclick="RightAnswer()">Mencari informasi toko yang menjual dengan harga yang lebih murah</label>
+        <label><input type="radio" name="soal-2-2" value="false" onclick="FalseAnswer()">Mencari informasi tentang kelebihan dan kekurangan hardware tertentu</label>
+        <label><input type="radio" name="soal-2-3" value="false" onclick="FalseAnswer()">Mencari tutorial perakitan PC</label>
+        <label><input type="radio" name="soal-2-4" value="false" onclick="FalseAnswer()">Mencari buku manual komponen jika hardware yang dipakai adalah komponen bekas</label>
+        <label><input type="radio" name="soal-2-5" value="false" onclick="FalseAnswer()">Mencari orang yang akan merakitkan PC</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-1" onclick="setAnswerRotation()" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-3" onclick="clearAnswerRotation()" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 3-->
+<div data-role="page" id="soal-3">
+    <div role="main" class="ui-content">
+        <h3>Hal-hal utama yang harus diperhatikan dalam memiih sebuah Prosesor dalam perakitan PCadalah….</h3>
+        <form>
+        <label><input type="radio" name="soal-3-1" value="false" onclick="FalseAnswer()">harga</label>
+        <label><input type="radio" name="soal-3-2" value="false" onclick="FalseAnswer()">merk</label>
+        <label><input type="radio" name="soal-3-3" value="false" onclick="FalseAnswer()">purna jual</label>
+        <label><input type="radio" name="soal-3-4" value="false" onclick="FalseAnswer()">masa garansinya</label>
+        <label><input type="radio" name="soal-3-5" value="true" onclick="RightAnswer()">kecepatan dan kompatibilitasnya</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-2" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-4" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Soal 4-->
+<div data-role="page" id="soal-4">
+    <div role="main" class="ui-content">
+        <h3>Yang termasuk processing device yaitu…</h3>
+        <form>
+        <label><input type="radio" name="soal-4-1" value="false" onclick="FalseAnswer()">processor, hard disk, CD RW drive</label>
+        <label><input type="radio" name="soal-4-2" value="true" onclick="RightAnswer()">processor, RAM dan ROM</label>
+        <label><input type="radio" name="soal-4-3" value="false" onclick="FalseAnswer()">processor, RAM, ROM dan hard disk</label>
+        <label><input type="radio" name="soal-4-4" value="false" onclick="FalseAnswer()">processor, RAM, ROM, hardidk dan CD RW drive</label>
+        <label><input type="radio" name="soal-4-5" value="false" onclick="FalseAnswer()">processor, VGA card, CD RW drive</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-3" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-5" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Soal 5-->
+<div data-role="page" id="soal-5">
+    <div role="main" class="ui-content">
+        <h3>Papan rangkaian komputer tempat semua komponen elektronik komputer terangkai disebut....</h3>
+        <form>
+        <label><input type="radio" name="soal-5-1" value="false" onclick="FalseAnswer()">Keyboard</label>
+        <label><input type="radio" name="soal-5-2" value="true" onclick="RightAnswer()">Motherboard</label>
+        <label><input type="radio" name="soal-5-3" value="false" onclick="FalseAnswer()">Peripheral</label>
+        <label><input type="radio" name="soal-5-4" value="false" onclick="FalseAnswer()">Casing</label>
+        <label><input type="radio" name="soal-5-5" value="false" onclick="FalseAnswer()">Soket</label>
+        </form>
+</div>
+<div data-role="footer" style="overflow:hidden;" data-position="fixed">
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#soal-4" onclick="setAnswerRotation()">Sebelumnya</a></li>
+            <li><a href="#soal-6" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<!-- Soal 6-->
+<div data-role="page" id="soal-6">
+    <div role="main" class="ui-content">
+        <h3>Beberapa alat input mempunyai fungsi ganda, yaitu disamping sebagai alat input juga berfungsi sebagai alat output sekaligus. Alat yang demikian disebut….</h3>
+        <form>
+        <label><input type="radio" name="soal-6-1" value="true" onclick="RightAnswer()">Terminal</label>
+        <label><input type="radio" name="soal-6-2" value="false" onclick="FalseAnswer()">Input device</label>
+        <label><input type="radio" name="soal-6-3" value="false" onclick="FalseAnswer()">Output device</label>
+        <label><input type="radio" name="soal-6-4" value="false" onclick="FalseAnswer()">processing device</label>
+        <label><input type="radio" name="soal-6-5" value="false" onclick="FalseAnswer()">input device</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-5" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-7" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Soal 7-->
+<div data-role="page" id="soal-7">
+    <div role="main" class="ui-content">
+        <h3>Periperal yang tidak menggunakan Port PS/2 adalah....</h3>
+        <form>
+        <label><input type="radio" name="soal-7-1" value="false" onclick="FalseAnswer()">Speaker</label>
+        <label><input type="radio" name="soal-7-2" value="false" onclick="FalseAnswer()">Mouse</label>
+        <label><input type="radio" name="soal-7-3" value="false" onclick="FalseAnswer()">Printer</label>
+        <label><input type="radio" name="soal-7-4" value="false" onclick="FalseAnswer()">Monitor</label>
+        <label><input type="radio" name="soal-7-5" value="true" onclick="RightAnswer()">LCD Proyektor</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-6" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-8" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 8-->
+<div data-role="page" id="soal-8">
+    <div role="main" class="ui-content">
+        <h3>konektor berikut ini adalah jenis.....</h3>
+        <img src="img/gbsoal1.PNG">
+        <form>
+        <label><input type="radio" name="soal-8-1" value="false" onclick="FalseAnswer()">RJ45</label>
+        <label><input type="radio" name="soal-8-2" value="false" onclick="FalseAnswer()">Paralel</label>
+        <label><input type="radio" name="soal-8-3" value="false" onclick="FalseAnswer()">USB</label>
+        <label><input type="radio" name="soal-8-4" value="false" onclick="FalseAnswer()">Serial</label>
+        <label><input type="radio" name="soal-8-5" value="true" onclick="RightAnswer()">PS/2</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-7" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-9" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Soal 9-->
+<div data-role="page" id="soal-9">
+    <div role="main" class="ui-content">
+        <h3>Gambar di bawah ini adalah slot untuk memasang.....</h3>
+        <img src="img/gbsoal2.PNG">
+        <form>
+        <label><input type="radio" name="soal-9-1" value="false" onclick="FalseAnswer()">RAM</label>
+        <label><input type="radio" name="soal-9-2" value="false" onclick="FalseAnswer()">Mouse</label>
+        <label><input type="radio" name="soal-9-3" value="false" onclick="FalseAnswer()">VGA</label>
+        <label><input type="radio" name="soal-9-4" value="true" onclick="RightAnswer()">Processor</label>
+        <label><input type="radio" name="soal-9-5" value="false" onclick="FalseAnswer()">Ethernet Card</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-8" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-10" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 10-->
+<div data-role="page" id="soal-10">
+    <div role="main" class="ui-content">
+        <h3>Salah satu peripheral yang termasuk input device adalah….</h3>
+        <form>
+        <label><input type="radio" name="soal-10-1" value="false" onclick="FalseAnswer()">Printer</label>
+        <label><input type="radio" name="soal-10-2" value="false" onclick="FalseAnswer()">Mouse</label>
+        <label><input type="radio" name="soal-10-3" value="true" onclick="RightAnswer()">Keyboard</label>
+        <label><input type="radio" name="soal-10-4" value="false" onclick="FalseAnswer()">Monitor</label>
+        <label><input type="radio" name="soal-10-5" value="false" onclick="FalseAnswer()">LCD Proyektor</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-9" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-11" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 11-->
+<div data-role="page" id="soal-11">
+    <div role="main" class="ui-content">
+        <h3>RAM ( Read Only Memory ) dan Harddisk dikelompokkan sebagai storage device. Perbedaan keduanya dalam hal menyimpan adalah….</h3>
+        <form>
+        <label><input type="radio" name="soal-11-1" value="false" onclick="FalseAnswer()">RAM menyimpan data secara permanen , Harddisk sementara</label>
+        <label><input type="radio" name="soal-11-2" value="true" onclick="RightAnswer()">RAM menyimpan data secara sementara , Harddisk permanen</label>
+        <label><input type="radio" name="soal-11-3" value="false" onclick="FalseAnswer()">RAM dapat menyimpan data yang lebih besar dari Harddisk</label>
+        <label><input type="radio" name="soal-11-4" value="false" onclick="FalseAnswer()">Data di Harddisk bersifat volatile</label>
+        <label><input type="radio" name="soal-11-5" value="false" onclick="FalseAnswer()">Data di RAM bersifat nonvolatil</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-10" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-12" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 12-->
+<div data-role="page" id="soal-12">
+    <div role="main" class="ui-content">
+        <h3>Dari peripheral di bawah ini :</h3>
+        <ol>
+            <li> RAM</li>
+            <li> Processor</li>
+            <li> Floppy disk</li>
+            <li> Mouse</li>
+            <li> Keyboard</li>
+            <li> hard disk</li>
+            <li> printer</li>
+            <li> monitor</li>
+        </ol>
+        yang termasuk media penyimpanan adalah....
+        <form>
+        <label><input type="radio" name="soal-12-1" value="false" onclick="FalseAnswer()">1,2,3</label>
+        <label><input type="radio" name="soal-12-2" value="true" onclick="RightAnswer()">1,3,6</label>
+        <label><input type="radio" name="soal-12-3" value="false" onclick="FalseAnswer()">2,3,6</label>
+        <label><input type="radio" name="soal-12-4" value="false" onclick="FalseAnswer()">4,5,7</label>
+        <label><input type="radio" name="soal-12-5" value="false" onclick="FalseAnswer()">6,7,8</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-11" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-13" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 13-->
+<div data-role="page" id="soal-13">
+    <div role="main" class="ui-content">
+        <h3>Fungsi dari heatsink adalah….</h3>
+        <form>
+        <label><input type="radio" name="soal-13-1" value="false" onclick="FalseAnswer()">Acesoris pada prosesor</label>
+            <label><input type="radio" name="soal-13-2" value="false" onclick="FalseAnswer()">Penjepit prosesor</label>
+            <label><input type="radio" name="soal-13-3" value="false" onclick="FalseAnswer()">Tempat meletakkan prosesor</label>
+            <label><input type="radio" name="soal-13-4" value="false" onclick="FalseAnswer()">Melindungi prosesor</label>
+            <label><input type="radio" name="soal-13-5" value="true" onclick="RightAnswer()">Menyerap panas dari prosesor</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-12" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-14" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 14-->
+<div data-role="page" id="soal-14">
+    <div role="main" class="ui-content">
+        <h3>Perhatikan ciri-ciri dari RAM berikut ini.</h3>
+        <ul><li>- Berbentuk single inline memory module</li>
+            <li>- Jumlah pin pada mainboard 72</li></ul>
+        adalah ciri-ciri dari RAM....
+        <form>
+        <label><input type="radio" name="soal-14-1" value="false" onclick="FalseAnswer()">RDRAM</label>
+        <label><input type="radio" name="soal-14-2" value="false" onclick="FalseAnswer()">DDRAM</label>
+        <label><input type="radio" name="soal-14-3" value="true" onclick="RightAnswer()">SDRAM</label>
+        <label><input type="radio" name="soal-14-4" value="false" onclick="FalseAnswer()">EDORAM</label>
+        <label><input type="radio" name="soal-14-5" value="false" onclick="FalseAnswer()">EVDORAM</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-13" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-15" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 15-->
+<div data-role="page" id="soal-15">
+    <div role="main" class="ui-content">
+        <h3>Proses pengulangan pengambilan program bootstrap pada saat komputer masih hidup
+            dengan cara menekan tombol kombinasi pada papan ketik sekaligus, yaitu Ctrl, Alt, dan
+            Del disebut….</h3>
+        <form>
+        <label><input type="radio" name="soal-15-1" value="false" onclick="FalseAnswer()">cold booting</label>
+        <label><input type="radio" name="soal-15-2" value="false" onclick="FalseAnswer()">Heat booting</label>
+        <label><input type="radio" name="soal-15-3" value="false" onclick="FalseAnswer()"> Keyboard booting</label>
+        <label><input type="radio" name="soal-15-4" value="false" onclick="FalseAnswer()">Combination booting</label>
+        <label><input type="radio" name="soal-15-5" value="true" onclick="RightAnswer()">Warm booting</label>
+            </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-14" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-16" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 16-->
+<div data-role="page" id="soal-16">
+    <div role="main" class="ui-content">
+        <h3>RAM adalah volatile device storage sedangkan ROM adalah non-volatile device storage.
+            Yang dimaksud dengan volatile device adalah….</h3>
+        <form>
+            <label><input type="radio" name="soal-16-1" value="false" onclick="FalseAnswer()">Data akan hilang jika PC pada posisi standby</label>
+            <label><input type="radio" name="soal-16-2" value="false" onclick="FalseAnswer()">Data telah tersimpan di harddisk</label>
+            <label><input type="radio" name="soal-16-3" value="false" onclick="FalseAnswer()"> Data tersimpan jika catu daya mati</label>
+            <label><input type="radio" name="soal-16-4" value="false" onclick="FalseAnswer()">Data akan terhapus jika tidak dipassword</label>
+            <label><input type="radio" name="soal-16-5" value="true" onclick="RightAnswer()">Data akan terhapus jika catu daya mati</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-15" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-17" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 17-->
+<div data-role="page" id="soal-17">
+    <div role="main" class="ui-content">
+        <h3>Harddisk tipe PATA disertai dengan Jumper. Kegunaan Jumper adalah untuk mengatur….</h3>
+        <form>
+            <label><input type="radio" name="soal-17-1" value="true" onclick="RightAnswer()">Posisi hardisk sebagai master atau slave</label>
+            <label><input type="radio" name="soal-17-2" value="false" onclick="FalseAnswer()">Posisi hardisk sebagai eksternal storage atau internal storage</label>
+            <label><input type="radio" name="soal-17-3" value="false" onclick="FalseAnswer()"> Jumlah drive yang ada di harddisk</label>
+            <label><input type="radio" name="soal-17-4" value="false" onclick="FalseAnswer()">Jumlah harddisk yang akan dipasang pada PC</label>
+            <label><input type="radio" name="soal-17-5" value="false" onclick="FalseAnswer()">Jumlah user yang akan menggunakan PC</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-16" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-18" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 18-->
+<div data-role="page" id="soal-18">
+    <div role="main" class="ui-content">
+        <h3>Berikut ini bukan hal-hal yang diperhatikan ketika akan merakit sebuah PC adalah….</h3>
+        <form>
+        <label><input type="radio" name="soal-18-1" value="false" onclick="FalseAnswer()">Anggaran / dana</label>
+            <label><input type="radio" name="soal-18-2" value="false" onclick="FalseAnswer()">Kebutuhan</label>
+            <label><input type="radio" name="soal-18-3" value="false" onclick="FalseAnswer()"> Ketersediaan hardware</label>
+            <label><input type="radio" name="soal-18-4" value="true" onclick="RightAnswer()">Mengikuti trend</label>
+            <label><input type="radio" name="soal-18-5" value="false" onclick="FalseAnswer()">Up date hardware</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-17" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-19" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 19-->
+<div data-role="page" id="soal-19">
+    <div role="main" class="ui-content">
+        <h3>peralatan yang tidak dibutuhkan dalam merakit PC adalah....</h3>
+        <form>
+        <label><input type="radio" name="soal-19-1" value="false" onclick="FalseAnswer()">Test Pen</label>
+        <label><input type="radio" name="soal-19-2" value="false" onclick="FalseAnswer()">Multimeter</label>
+        <label><input type="radio" name="soal-19-3" value="false" onclick="FalseAnswer()">Obeng</label>
+        <label><input type="radio" name="soal-19-4" value="false" onclick="FalseAnswer()">Tang</label>
+        <label><input type="radio" name="soal-19-5" value="true" onclick="RightAnswer()">UPS</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-18" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#soal-20" onclick="clearAnswerRotation()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Soal 20-->
+<div data-role="page" id="soal-20">
+    <div role="main" class="ui-content">
+        <h3>komponen yang bisa dipasang di slot ekspansi adalah....</h3>
+        <ol>
+            <li> LAN Card</li>
+            <li> VGA Card</li>
+            <li> TV Tuner</li>
+            <li> Memori</li>
+            <li> Prosesor</li>
+        </ol>
+        <form>
+        <label><input type="radio" name="soal-20-1" value="true" onclick="RightAnswer()">1,2,3</label>
+        <label><input type="radio" name="soal-20-2" value="false" onclick="FalseAnswer()">2,3,4</label>
+        <label><input type="radio" name="soal-20-3" value="false" onclick="FalseAnswer()">3,4,5</label>
+        <label><input type="radio" name="soal-20-4" value="false" onclick="FalseAnswer()">2,3,5</label>
+        <label><input type="radio" name="soal-20-5" value="false" onclick="FalseAnswer()">1,3,4</label>
+        </form>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#soal-19" onclick="setAnswerRotation()">Sebelumnya</a></li>
+                <li><a href="#selesai" onclick="showResult()">Selanjutnya</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- selesai -->
+<div data-role="page" id="selesai">
+    <div role="main" class="ui-content">
+        <h1>Latihan Selesai!</h1>
+        <h3>Skor Anda:</h3>
+        <font size="12">
+        <div id="skorResult">
+        </div>
+        </font>
+    </div>
+    <div data-role="footer" style="overflow:hidden;" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#selamat-datang" onclick="resetScore()">Mulai Ulang Kuis</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</html>

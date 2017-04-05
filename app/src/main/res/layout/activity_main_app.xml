@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.ac.uny.reny.perakitankomputer.MainApp"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="0dp"
+                android:layout_weight="10">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/title_bar"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:text="Perakitan Komputer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView5"
+                        tools:layout_height="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="90">
+
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:requiresFadingEdge="vertical"
+                        android:fadingEdgeLength="30dp"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_weight="90"
+                                    android:weightSum="100">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:weightSum="100"
+                                        android:layout_weight="33"
+                                        android:layout_marginTop="10dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView2"
+                                            android:src="@mipmap/menu_kompetensi"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true"
+                                            android:layout_margin="5dp"
+                                            android:onClick="goToKompetensiActivity" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView3"
+                                            android:src="@mipmap/menu_materi"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true"
+                                            android:layout_margin="5dp"
+                                            android:onClick="goToMateriActivity" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="33"
+                                        android:weightSum="100">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView4"
+                                            android:src="@mipmap/menu_latihan"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true"
+                                            android:layout_margin="5dp"
+                                            android:onClick="goToLatihanActivity" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView5"
+                                            android:src="@mipmap/menu_bantuan"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true"
+                                            android:layout_margin="5dp"
+                                            android:onClick="goToBantuanActivity" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:weightSum="100"
+                                        android:layout_weight="33"
+                                        android:layout_marginBottom="20dp">
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView6"
+                                            android:src="@mipmap/menu_tentang"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true"
+                                            android:layout_margin="5dp"
+                                            android:onClick="goToTentangActivity" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:id="@+id/imageView7"
+                                            android:src="@mipmap/cover"
+                                            android:layout_weight="50"
+                                            android:adjustViewBounds="true" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
